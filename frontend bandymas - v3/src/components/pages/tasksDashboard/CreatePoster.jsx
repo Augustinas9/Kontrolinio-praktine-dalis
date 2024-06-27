@@ -65,7 +65,7 @@ const CreatePoster = () => {
         <div className="form-buttons">
           <button type="submit">Create Poster</button>
           <button type="button" onClick={handleBack}>Cancel</button>
-          <button onClick={handleBack} style={{ backgroundColor: '#3b256e', color: 'white', border: 'none', cursor: 'pointer', marginLeft: '151px'}}>Back to Category</button>
+          <button onClick={handleBack} style={{ backgroundColor: '#3b206e', color: 'white', border: 'none', cursor: 'pointer', marginLeft: '151px'}}>Back to Category</button>
         </div>
       </form>
     </div>

@@ -11,7 +11,7 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [loginError, setLoginError] = useState({ badUsername: '', badPassword: '' });
 
-    const colors = ['rgba(27, 110, 48, 0.2)', '#1b6e3060', '#5EA2E265', '#F6E17090']; // Array of colors
+    const colors = []; // Array of colors
   const [colorIndex, setColorIndex] = useState(0); // State to keep track of the current color index
 
 
