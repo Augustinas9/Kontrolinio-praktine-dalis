@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    background: linear-gradient(90deg, #7359FB 0%, #E147AB 100%);
+    background-color: rgba(27, 110, 48, 0.4);
+} */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    /* background: linear-gradient(90deg, #7359FB 0%, #E147AB 100%); */
+    background-color: #1b6e3066;
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: #3C257C;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+/* Base styles for the input */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000000;
+}
+
+.input-box input::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+/* Specific styles to handle autofill */
+/* Webkit browsers (Chrome, Safari, Edge) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important; /* or the background color you prefer */
+    -webkit-text-fill-color: #000 !important; /* Ensure the text color is what you desire */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Firefox */
+input:-moz-autofill {
+    box-shadow: 0 0 0 30px white inset !important; /* or the background color you prefer */
+    -moz-text-fill-color: #000 !important; /* Ensure the text color is what you desire */
+}
+
+.input-box input:-webkit-autofill {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+.input-box input:-webkit-autofill:focus {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+.input-box input:-webkit-autofill:hover {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+.input-box input:-webkit-autofill:active {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* For Firefox */
+.input-box input:-moz-autofill {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -moz-text-fill-color: #000000 !important;
+}
+
+
+.input-box .bad-input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ff0000;
+}
+
+.input-box input::placeholder {
+    color: #00000080;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #7749F8;
+    color: #fff;
+    font-weight: 600;
+}
+
+.wrapper label {
+ color: #000000;
+     font-size: small;
+     font-weight: bold;
+     display: block;
+     margin-bottom: -25px;
+ }
+
+ .register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 0;
+}
+ 
+.register-link p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.login-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.login-link p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
+
+
+.error-message {
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.show-hide {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #7749F8;
+}
+
+.show-hide:hover{
+    text-decoration: underline dashed;
+    color: #7749F8;   
+}
+
